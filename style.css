@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.horizontal-nav {
+  width: 5rem;
+  background-color: #01134e;
+  height: 100vh;
+}
+
+.horizontal-nav__logo {
+  height: 3.808rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.horizontal-nav__icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.625rem;
+}
+
+.horizontal-nav__section {
+  height: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.horizontal-nav__section svg path {
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  fill: #8089a6;
+}
+
+.horizontal-nav__section:hover {
+  color: white;
+}
+
+.horizontal-nav__section:hover svg path {
+  fill: #fff;
+}
+
+.horizontal-nav__section:hover .horizontal-nav__section--ribbon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.horizontal-nav__section--badge {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  width: 1.1875rem;
+  height: 1.1875rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #2a74db;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.horizontal-nav__section--ribbon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.25rem;
+  height: 100%;
+  background: #0ad69c;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9fafc;
+}
+
+main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  background-color: #fff;
+}
+
+main .header__links {
+  height: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .header__links a {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.685714px;
+  color: #252f48;
+}
+
+main .header__links a svg {
+  margin-left: 0.7rem;
+}
+
+main .header__account {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .header__account:hover {
+  cursor: pointer;
+}
+
+main .header__account img {
+  width: 1.375rem;
+  height: 1.375rem;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+}
+
+main .header__account p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.28px;
+}
+
+main .header__account svg {
+  padding: 0 0.5rem;
+}
+
+main .chat {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .chat-main {
+  width: 80%;
+  margin-top: 1.7rem;
+  -webkit-box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
+          box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
+  border-radius: 4px;
+}
+
+main .chat-users {
+  width: 30%;
+}
+
+main .chat-users__user {
+  height: 5.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7f9fc;
+}
+
+main .chat-users__user img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  padding: 0 14px;
+}
+
+main .chat-users__name {
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.571429px;
+  color: #01134e;
+}
+
+main .chat-users__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #252f48;
+  mix-blend-mode: normal;
+  opacity: 0.43;
+}
+
+main .chat-field {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
